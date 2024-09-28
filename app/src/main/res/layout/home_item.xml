@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_135sdp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_no_dots="false"
+                    app:iss_error_image="@drawable/user_24"
+                    app:iss_period="2000"
+                    app:iss_text_align="CENTER" />
+
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/homeicon"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:scaleType="fitXY"-->
+                <!--                android:src="@drawable/carousel_002" />-->
+
+                <com.cilpl.clusters.utils.TwCenMTBold
+                    android:id="@+id/hedaer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="Fixed Desks"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Seats Capacity"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text=" :5"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Availability : "
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/sun_txt"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:background="@drawable/roundred_txt"
+                            android:gravity="center"
+                            android:text="SU"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/mon_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/round_txt"
+                            android:gravity="center"
+                            android:text="M"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/tue_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/round_txt"
+                            android:gravity="center"
+                            android:text="T"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/wed_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/round_txt"
+                            android:gravity="center"
+                            android:text="W"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/thr_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/round_txt"
+                            android:gravity="center"
+                            android:text="TH"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/fri_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/round_txt"
+                            android:gravity="center"
+                            android:text="F"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTFont
+                            android:id="@+id/sat_txt"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:background="@drawable/roundred_txt"
+                            android:gravity="center"
+                            android:text="S"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Price :"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:id="@+id/price_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text=" :5"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+
+                    <com.cilpl.clusters.utils.TwCenMTFont
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:ellipsize="end"
+                        android:text="6th Floor, Asian Suncity,Forest area,Kondapur,Hyderabad"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.cilpl.clusters.utils.ButtonEditTwCenMTFont
+                        android:id="@+id/addbtn"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/btn0_bg"
+                        android:text="@string/book_now"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/btn0_bg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/cart_white"
+                            android:visibility="gone" />
+
+                        <com.cilpl.clusters.utils.TwCenMTBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:text="@string/book_now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/iv_tick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@drawable/tick" />
+</LinearLayout>

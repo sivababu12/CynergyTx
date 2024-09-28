@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/menu_item"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/menus" />
+
+        <com.cilpl.clusters.utils.TwCenMTFont
+            android:id="@+id/hometitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_75sdp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+    <RelativeLayout
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+         android:layout_marginEnd="@dimen/_5sdp"
+        >
+        <ImageView
+            android:id="@+id/notificationicon"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/bell" />
+        <com.cilpl.clusters.utils.TwCenMTFont
+            android:id="@+id/cartcount"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_alignRight="@id/menuicon"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="-6dp"
+            android:background="@drawable/rounded_square"
+            android:text="0"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:itemIconTint="@color/bottom_bar_item_selector"
+            android:background="@android:color/transparent"
+            app:itemTextColor="@color/bottom_bar_item_selector"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="center"
+        android:layout_alignParentBottom="true"
+        app:layout_anchor="@id/bottomAppBar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_18sdp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/cart_icon"
+            app:maxImageSize="30dp"
+            app:tint="@color/colorPrimary" />
+        <com.cilpl.clusters.utils.TwCenMTFont
+            android:id="@+id/cartcount1"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignRight="@id/fab"
+            android:layout_marginTop="-10dp"
+            android:elevation="@dimen/_7sdp"
+            android:layout_marginEnd="-6sp"
+            android:background="@drawable/rounded_square"
+            android:text=""
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

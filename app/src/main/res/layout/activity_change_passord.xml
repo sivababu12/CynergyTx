@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiantcolorr"
+    tools:context=".Activites.ConfirmPassordActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_icn"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+
+            android:layout_alignParentStart="true"/>
+
+        <com.cilpl.clusters.utils.TwCenMTFont
+            android:id="@+id/texname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/change_passord"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_3sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.cilpl.clusters.utils.TwCenMTBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="@string/enterconfirmpasstxt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:passwordToggleEnabled="true"
+                app:shapeAppearance="@style/Rounded"
+                app:passwordToggleTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <com.cilpl.clusters.utils.EditTwCenMTFont
+                    android:id="@+id/oldpass_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.4"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    app:endIconMode="password_toggle"
+                    android:inputType="textPassword"
+                    app:endIconDrawable="@drawable/hide"
+                    android:hint="@string/old_passord" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:passwordToggleEnabled="true"
+                app:shapeAppearance="@style/Rounded"
+                app:passwordToggleTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <com.cilpl.clusters.utils.EditTwCenMTFont
+                    android:id="@+id/pass1_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.4"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    app:endIconMode="password_toggle"
+                    android:inputType="textPassword"
+                    app:endIconDrawable="@drawable/hide"
+                    android:hint="@string/new_passord" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:passwordToggleEnabled="true"
+                app:shapeAppearance="@style/Rounded"
+                app:passwordToggleTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <com.cilpl.clusters.utils.EditTwCenMTFont
+                    android:id="@+id/pass2_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.4"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:hint="@string/confirm_password"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.cilpl.clusters.utils.ButtonEditTwCenMTFont
+                android:id="@+id/signinbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/submit_txt"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn0_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

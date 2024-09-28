@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/_3sdp">
+            <LinearLayout
+                android:id="@+id/virtualslot"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <ImageView
+                        android:id="@+id/cancel_button"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end"
+                        android:src="@drawable/baseline_cancel_24" />
+                    <com.cilpl.clusters.utils.TwCenMTBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="@string/join_us"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_20sdp" />
+                </RelativeLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/ftname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1.4"
+                        android:hint="@string/fname"
+                        android:inputType="textCapWords"
+                        android:paddingStart="8sp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/lsname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_weight="1.4"
+                        android:inputType="textCapWords"
+                        android:paddingStart="8sp"
+                        android:textSize="@dimen/_14sdp"
+                         android:textColor="@color/black"
+                        android:hint="@string/name"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/phone_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1.4"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingStart="8sp"
+                        android:maxLength="10"
+                        android:textSize="@dimen/_14sdp"
+                         android:textColor="@color/black"
+                        android:hint="@string/phone"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/email_"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1.4"
+                        android:paddingStart="8sp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                         android:textColor="@color/black"
+                        android:hint="@string/work_email"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_weight="1.4"
+                        android:paddingStart="8sp"
+                        android:inputType="textCapWords"
+
+                        android:textSize="@dimen/_14sdp"
+                         android:textColor="@color/black"
+                        android:hint="Current City"
+                       />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/nature_bussiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_weight="1.4"
+                        android:paddingStart="8sp"
+                        android:textSize="@dimen/_14sdp"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black"
+                        android:hint="Nature of Business"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearance="@style/Rounded"
+                    android:layout_marginStart="@dimen/_10sdp"
+
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <com.cilpl.clusters.utils.EditTwCenMTFont
+                        android:id="@+id/cmpyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_weight="1.4"
+                        android:paddingStart="8sp"
+                        android:textSize="@dimen/_14sdp"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black"
+                        android:hint="Company Name"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.cilpl.clusters.utils.TwCenMTBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/select_your_virtual_plan"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/textroundbg">
+                    <Spinner
+                        android:id="@+id/virtualspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal"
+                    >
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="1.2"
+                        android:buttonTint="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:scaleY="1.2" />
+                    <com.cilpl.clusters.utils.TwCenMTFont
+                        android:id="@+id/terms_conditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/i_agree_to_user_agreement_and_guest_policy"/>
+                </LinearLayout>
+
+
+                <com.cilpl.clusters.utils.ButtonEditTwCenMTFont
+                    android:id="@+id/virtual_Submit"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="@string/submit_txt"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn0_bg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/confirmslot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/gif_image"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+
+                <com.cilpl.clusters.utils.TwCenMTBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="Thank you "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sdp" />
+
+                <com.cilpl.clusters.utils.TwCenMTFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="One of Our respective team will call \n you back shortly. "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.cilpl.clusters.utils.ButtonEditTwCenMTFont
+                    android:id="@+id/sumit_btn"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:text="@string/submit_txt"
+                    android:textAllCaps="false"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

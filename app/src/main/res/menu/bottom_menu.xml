@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/shorts"
+        android:title="@string/clusters"
+        android:icon="@drawable/clusters_icon"
+        />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/subscriptions"
+        android:title="@string/services"
+        android:icon="@drawable/services_icon" />
+    <item
+        android:id="@+id/library"
+        android:title="@string/support"
+        android:icon="@drawable/support_icon" />
+
+</menu>
